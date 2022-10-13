@@ -58,7 +58,7 @@ def send():
             'SELECT * FROM user WHERE username = ?', (to_username,)
         ).fetchone()
         
-        if userto is None:
+        if userto is  None:
             error = 'Nombre de usuario incorrecto'
      
         if error is not None:
